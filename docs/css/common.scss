@@ -43,7 +43,7 @@ header {
   display: block;
   position: fixed;
   right: 4.5vw;
-  top: 3vh;
+  top: 3.5vh;
   margin: auto auto;
   width: 12vw;
   cursor: pointer;
@@ -85,7 +85,8 @@ header {
 }
 
 .main-visual__bg {
-  position: fixed;
+  //position: fixed;
+  position: absolute;
   top: -30vh;
   left: -62vw;
   transition: .7s ease;
@@ -98,7 +99,8 @@ header {
 
 .catch-copy {
   font-family: 'Noto Serif JP', serif;
-  position: fixed;
+  //position: fixed;
+  position: absolute;
   margin: 15vh 0 0 5vw;
   text-align: left;
   font-size: 9vw;
@@ -142,7 +144,8 @@ header {
 
 .main-visual {
   .main-visual_logo {
-    position: fixed;
+    //position: fixed;
+    position: absolute;
     height: 80vw;
     bottom: 8vh;
     left: 50%;
@@ -151,7 +154,8 @@ header {
   }
   .main-visual_logo_text {
     width: 100vw;
-    position: fixed;
+    //position: fixed;
+    position: absolute;
     bottom: 5vh;
     z-index: -5;
   }
