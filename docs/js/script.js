@@ -1,3 +1,5 @@
+new WOW().init();
+
 $(function(){
     $('.main-content-wrapper').stickyStack({
         containerElement: '.main-content-wrapper',
@@ -5,6 +7,78 @@ $(function(){
         boxShadow: '0 -3px 20px rgba(0, 0, 0, 0.25)'
     });
 });
+
+$(function(){
+  $('#about__link').click(function(){
+    var speed = 1000;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = 680;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
+
+$(function(){
+  $('#works__link').click(function(){
+    var speed = 1000;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = 1580;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
+
+$(function(){
+  $('#activity__link').click(function(){
+    var speed = 1000;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = 2830;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
+
+$(function(){
+  $('#member__link').click(function(){
+    var speed = 1000;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
+
+$(function(){
+  $('#contact__link').click(function(){
+    var speed = 1000;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
+
+$(function() {
+  $(".nav-toggle").click(function() {
+    $(".nav-toggle div").toggleClass("active");
+    $(".nav_bg").toggleClass("nav_bg-open");
+    $(".gnav").toggleClass("gnav_open");
+  });
+});
+
+$(function() {
+  $(".gnav li a").click(function() {
+    $(".nav-toggle div").toggleClass("active");
+    $(".nav_bg").toggleClass("nav_bg-open");
+    $(".gnav").toggleClass("gnav_open");
+  });
+});
+
 
 const defaultDispCnt = 3; // 初期表示件数
 const addDispCnt = 2;     // 追加表示件数
@@ -35,7 +109,6 @@ const addDispCnt = 2;     // 追加表示件数
     // もっと見るボタンクリックイベント
     $('.more__btn').click(function () {
       let newCount = currentDispCnt + addDispCnt; // 新しく表示する件数
-      //$('#activity').css('height', 500+'vh');
       // 新しく表示する件数のみ表示
       $(tileList).each(function (i, elem) {
         if (currentDispCnt <= i && i < newCount) {

@@ -3,23 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="title" content="函館発新体験開発プロジェクト2019">
-    <meta name="description" content="函館発新体験開発プロジェクト2019">
+    <meta name="description" content="私たちは様々なイベントを通して、私たちなりの「新体験」を発信し、伝えることを目指して活動しています。私たちは「新体験」を、「あたりまえに意識を向けて感性を豊かにする体験」と定義しました。この私達なりの「新体験」をもとにそれを伝えるコンテンツを開発しています。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>函館発新体験開発プロジェクト2019</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/common.min.css">
     <link rel="shortcut icon" href="img/logo1.png">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Noto+Serif+JP|Oswald:400&display=swap" rel="stylesheet">
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/jquery.stickystack.min.js"></script>
-    <script src="js/script.js"></script>
   </head>
   <body>
+    <div id=“fakeLoader”></div>
     <header>
-      <div class="nav_bg">
+      <div class="nav_bg  wow fadeIn" data-wow-duration=".8s" data-wow-delay="1.8s">
       </div>
-      <div class="nav-toggle">
+      <div class="nav-toggle wow fadeIn" data-wow-duration=".8s" data-wow-delay="1.8s">
         <div>
           <span></span>
           <span></span>
@@ -28,44 +27,44 @@
       </div>
       <nav class="gnav">
         <ul class="gnav__list">
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#works">WORKS</a></li>
-          <li><a href="#member">MEMBER</a></li>
-          <li><a href="#activity">ACTIVITY</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a id="about__link" href="#about">ABOUT</a></li>
+          <li><a id="works__link" href="#works">WORKS</a></li>
+          <li><a id="activity__link" href="#activity">ACTIVITY</a></li>
+          <li><a id="member__link" href="#member">MEMBER</a></li>
+          <li><a id="contact__link" href="#contact">CONTACT</a></li>
         </ul>
       </nav>
-      <div class="main-visual__bg"></div>
+      <div class="main-visual__bg  wow fadeInDownBig" data-wow-duration="1.8s" data-wow-delay=""></div>
       <div class="catch-copy">
-        <p>「あたりまえ」の<br>中にある「気づき」。</p>
+        <p class="wow fadeInLeft" data-wow-duration=".8s" data-wow-delay="1.2s">「あたりまえ」の<br>中にある「気づき」。</p>
       </div>
       <div class="main-visual">
-        <img class="main-visual_logo" src="img/logo1.png" alt="">
-        <img class="main-visual_logo_text" src="img/logo1_text.png" alt="">
+        <img class="main-visual_logo wow fadeIn" data-wow-duration=".8s" data-wow-delay="1.8s" src="img/logo1.png" alt="">
+        <img class="main-visual_logo_text wow fadeInUp" data-wow-duration=".8s" data-wow-delay="1.8s" src="img/logo1_text.png" alt="">
       </div>
     </header>
     <main class="main-content-wrapper">
       <section id="about" class="about">
         <h1 class="about__title">ABOUT</h1>
         <h2 class="about__title-2">函館発新体験開発プロジェクトとは</h2>
-        <p class="about__text">私たちは様々なイベントを通して、私たちなりの「新体験」を発信し、伝えることを目指して活動しています。私たちは「新体験」を、「あたりまえに意識を向けて感性を豊かにする体験」と定義しました。この私達なりの「新体験」をもとにそれを伝えるコンテンツを開発しています。</p>
+        <p class="about__text wow fadeInLeft" data-wow-duration="1.0s" data-wow-delay=".4s">私たちは様々なイベントを通して、私たちなりの「新体験」を発信し、伝えることを目指して活動しています。私たちは「新体験」を、「あたりまえに意識を向けて感性を豊かにする体験」と定義しました。この私達なりの「新体験」をもとにそれを伝えるコンテンツを開発しています。</p>
         <img class="triangle1" src="img/triangle1.png" alt="">
-        <img class="about__img" src="img/about_img.jpg" alt="">
+        <img class="about__img wow fadeInRight" data-wow-duration="1.0s" data-wow-delay=".4s" src="img/about_img.jpg" alt="">
       </section>
       <section id="works" class="works">
         <h1 class="works__title">WORKS</h1>
-        <p class="works__text">私たちは「あたりまえに意識を向けて感性を豊かにする体験」を生み出すことを目指し、開発を行っています。</p>
+        <p class="works__text wow fadeInLeft" data-wow-duration="1.0s" data-wow-delay=".4s">私たちは「あたりまえに意識を向けて感性を豊かにする体験」を生み出すことを目指し、開発を行っています。</p>
         <div class="works__contents-block">
-          <div class="works__contents">
+          <!--<div class="works__contents">
+            <img class="works__img" src="img/pianissimo.png" alt="">
+          </div> -->
+          <div class="works__contents wow fadeInRight" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="works__img" src="img/sharp_rain.jpg" alt="">
           </div>
-          <div class="works__contents">
-            <img class="works__img" src="img/sharp_rain.jpg" alt="">
-          </div>
-          <div class="works__contents">
+          <div class="works__contents wow fadeInLeft" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="works__img" src="img/jiten.png" alt="">
           </div>
-          <div class="works__contents">
+          <div class="works__contents wow fadeInRight" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="works__img" src="img/un-bllera.jpg" alt="">
           </div>
         </div>
@@ -73,22 +72,22 @@
       <section id="activity" class="activity">
         <h1 class="activity__title">ACTIVITY</h1>
         <h2 class="activity__title-2">私たちの活動</h2>
-        <p class="activity__text">私たちは新体験の開発だけでなく、開発したコンテンツを様々な場所に出展しています。フィードバックから修正を繰り返し、より良いコンテンツにすることを目指しています。</p>
+        <p class="activity__text wow fadeInLeft" data-wow-duration="1.0s" data-wow-delay=".4s">私たちは新体験の開発だけでなく、開発したコンテンツを様々な場所に出展しています。フィードバックから修正を繰り返し、より良いコンテンツにすることを目指しています。</p>
         <img class="triangle2" src="img/triangle2.png" alt="">
         <div class="activity__list">
-          <div class="activity__article">
-            <img class="activity__article-img" src="img/activity_musabi.jpg" alt="">
+          <div class="activity__article wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".4s">
+            <img class="activity__article-img" src="img/noimage.png" alt="">
             <p><span class="activity__article-cap">2019.01.13</span></p>
             <h3 class="activity__article-title">「新日常展」開催のお知らせ</h3>
             <p class="activity__article-text">一年間の活動の集大成として、函館市芸術ホールと未来大ミュージアムにて「新日常展」と題した展覧会を行います。さまざまな展示を通し、本プロジェクトの目的である「新体験の提供」が実現されることを目指しています。</p>
           </div>
-          <div class="activity__article">
+          <div class="activity__article wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="activity__article-img" src="img/activity_musabi.jpg" alt="">
             <p><span class="activity__article-cap">2019.09.09</span></p>
             <h3 class="activity__article-title">武蔵野美術大学交流</h3>
             <p class="activity__article-text">武蔵野美術大学のデザイン情報学科の学生と情報交流を行いました。開発コンテンツについてプレゼンテーションを行い、多くのフィードバックを得ることができました。</p>
           </div>
-          <div class="activity__article">
+          <div class="activity__article wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="activity__article-img" src="img/activity_kagakusai.jpg" alt="">
             <p><span class="activity__article-cap">2019.08.24,25</span></p>
             <h3 class="activity__article-title">はこだて国際科学祭</h3>
@@ -120,71 +119,76 @@
           </div>
         </div>
         <div class="more">
-          <a href="#" class="more__btn">
+          <p class="more__text2">and more...</p>
+          <!--<a href="#" class="more__btn">
             <span class="more__text">more</span><span class="arow"></span><span class="arrowDown"></span>
-          </a>
+          </a>-->
         </div>
       </section>
       <section id="member" class="member">
         <h1 class="member__title">MEMBER</h1>
-        <p class="mamber__text">函館発新体験開発プロジェクトは、個性豊かな12名で構成されています。</p>
+        <p class="mamber__text wow fadeInLeft" data-wow-duration="1.0s" data-wow-delay=".4s">函館発新体験開発プロジェクトは、個性豊かな12名で構成されています。</p>
         <div class="member__img-block">
-          <div class="member__item">
+          <div class="member__item wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="member__img" src="img/member1.png" alt="">
           </div>
-          <div class="member__item">
+          <div class="member__item wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="member__img" src="img/member2.png" alt="">
           </div>
-          <div class="member__item">
+          <div class="member__item wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="member__img" src="img/member3.png" alt="">
           </div>
-          <div class="member__item">
+          <div class="member__item wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="member__img" src="img/member4.png" alt="">
           </div>
-          <div class="member__item">
+          <div class="member__item wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="member__img" src="img/member5.png" alt="">
           </div>
-          <div class="member__item">
+          <div class="member__item wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="member__img" src="img/member6.png" alt="">
           </div>
-          <div class="member__item">
+          <div class="member__item wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="member__img" src="img/member7.png" alt="">
           </div>
-          <div class="member__item">
+          <div class="member__item wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="member__img" src="img/member8.png" alt="">
           </div>
-          <div class="member__item">
+          <div class="member__item wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="member__img" src="img/member9.png" alt="">
           </div>
-          <div class="member__item">
+          <div class="member__item wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="member__img" src="img/member10.png" alt="">
           </div>
-          <div class="member__item">
+          <div class="member__item wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="member__img" src="img/member11.png" alt="">
           </div>
-          <div class="member__item">
+          <div class="member__item wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".4s">
             <img class="member__img" src="img/member12.png" alt="">
           </div>
         </div>
       </section>
       <section id="contact" class="contact">
         <h1 class="contact__title">CONTACT</h1>
-        <p class="contact__text">ご意見やご感想、その他の質問等がありましたら下記のメールアドレスやTwitterなどからご連絡ください。</p>
+        <p class="contact__text wow fadeInLeft" data-wow-duration="1.0s" data-wow-delay=".4s">ご意見やご感想、その他の質問等がありましたら下記のメールアドレスやTwitterなどからご連絡ください。</p>
         <img class="triangle2" src="img/triangle2.png" alt="">
-        <div class="contact__btn">
-          <a class="contact__mail" href="mailto:2019shintaiken@gmail.com">2019shintaiken@gmail.com</a>
-        </div>
         <div class="twitter-block">
           <a class="twitter-timeline" data-width="300" data-height="500" data-link-color="#F6920D" data-chrome="noscrollbar noheader nofooter" href="https://twitter.com/Shintaiken2019?ref_src=twsrc%5Etfw">Tweets by Shintaiken2019</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
+        <div class="contact__btn">
+          <a class="contact__mail" href="mailto:2019shintaiken@gmail.com">2019shintaiken@gmail.com</a>
+        </div>
+        <footer class="footer">
+          <div class="footer__logo">
+            <img class="footer__shintaiken-logo" src="img/logo2.png" alt="">
+            <img class="footer__fun-logo" src="img/fun_logo.png" alt="">
+          </div>
+          <p><span class="copyright">©函館発新体験開発プロジェクト</span></p>
+        </footer>
       </section>
     </main>
-    <footer>
-      <div class="footer__logo">
-        <img src="img/logo2.png" alt="">
-        <img src="" alt="">
-      </div>
-      <p><span class="copylight">©函館発新体験開発プロジェクト</span></p>
-    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.stickystack.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

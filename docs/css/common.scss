@@ -22,6 +22,15 @@ header {
   right: -6vw;
   top: -6vw;
   z-index: 10;
+  transition: .7s ease;
+}
+
+.nav_bg-open {
+  width: 500vw;
+  height: 500vw;
+  top: -250vw;
+  right: -250vw;
+  transition: .7s ease;
 }
 
 .nav-toggle span {
@@ -79,6 +88,7 @@ header {
   position: fixed;
   top: -30vh;
   left: -62vw;
+  transition: .7s ease;
   width: 165vw;
   height: 80vh;
   border-radius: 50%;
@@ -102,12 +112,32 @@ header {
 }
 
 .gnav {
-  display: none;
+  position: fixed;
+  z-index: 11;
+  opacity: 0;
+  transform: translateX(-70vw);
+  -webkit-transform: translateX(-70vw);
+  transition: .7s ease;
   .gnav__list {
     li {
-      margin: 5vh 0;
+      margin: 10vh 20vw;
+      a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 15vw;
+        font-family: 'Oswald', sans-serif;
+        color: #000;
+      }
     }
   }
+}
+
+.gnav_open {
+  opacity: 1;
+  display: block;
+  transform: translateX(0vw);
+  -webkit-transform: translateX(0vw);
+  transition: .7s ease;
 }
 
 .main-visual {
@@ -156,7 +186,7 @@ header {
 }
 
 .about {
-  height: 116vh;
+  height: 245vw;
   .about__title-2 {
     padding: 7vh 0 5vh;
     font-size: 6vw;
@@ -187,7 +217,7 @@ header {
 }
 
 .works {
-  height: 170vh;
+  height: 350vw;
   font-family: 'Noto Sans JP', sans-serif;
   .works__text {
     padding-top: 7vh;
@@ -200,8 +230,8 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     .works__contents {
-      width: 60vw;
-      height: 60vw;
+      width: 70vw;
+      height: 70vw;
       margin-top: 5vh;
       .works__img {
         width: 100%;
@@ -214,7 +244,7 @@ header {
 }
 
 .activity {
-  height: 260vh;
+  height: 550vw;
   font-family: 'Noto Sans JP', sans-serif;
   .activity__title-2 {
     padding: 7vh 0 5vh;
@@ -252,7 +282,12 @@ header {
   }
   .more {
     width: 45vw;
-    margin: 5vh auto 10vh;
+    margin: 5vh 0 10vh;
+    float: right;
+    .more__text2 {
+      display: block;
+      font-size: 8vw;
+    }
     .more__btn {
       width: 100%;
       display: block;
@@ -290,7 +325,7 @@ header {
 }
 
 .member {
-  height: 190vh;
+  height: 390vw;
   font-family: 'Noto Sans JP', sans-serif;
   .mamber__text {
     padding-top: 7vh;
@@ -310,7 +345,7 @@ header {
 }
 
 .contact {
-  height: 120vh;
+  height: 390vw;
   font-family: 'Noto Sans JP', sans-serif;
   .contact__text {
     padding: 7vh 0 5vh;
@@ -319,6 +354,7 @@ header {
   }
   .contact__btn {
     width: 86vw;
+    margin-bottom: 10vh;
   }
   .contact__mail {
     font-size: 5vw;
@@ -346,13 +382,31 @@ header {
   }
   .twitter-block {
     text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
   }
 }
 
-footer {
+.footer {
+  position: relative;
+  left: -10vw;
   background: #ddd;
-  width: 100vw;
-  img {
-    width: 100vw;
+  width: 120%;
+  .footer__logo {
+    border-bottom: 2px solid #aaa;
+    margin: 0 7vw 5vh;
+    padding-bottom: 2vh;
+    .footer__shintaiken-logo {
+      width: 90vw;
+      margin-top: 5vh;
+    }
+    .footer__fun-logo {
+      width: 70vw;
+      margin: 3vh 0 3vh 1vw;
+    }
+  }
+  .copyright {
+    display: inline-block;
+    margin: 2vh 0 30vh 7vw;
   }
 }
