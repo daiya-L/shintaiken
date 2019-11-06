@@ -130,7 +130,6 @@ header {
 .about, .activity, .contact {
   background: #fff;
   z-index: 5;
-  height: 100vh;
   padding: 0 7vw;
   position: relative;
 }
@@ -138,7 +137,6 @@ header {
 .works, .member {
   background: #F6920D;
   z-index: 5;
-  height: 100vh;
   padding: 0 7vw;
   position: relative;
 }
@@ -188,8 +186,29 @@ header {
   }
 }
 
+.works {
+  height: 170vh;
+  .works__contents-block {
+    margin: 3vh 0 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .works__contents {
+      width: 60vw;
+      height: 60vw;
+      margin-top: 5vh;
+      .works__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
 .activity {
-  height: 180vh;
+  height: 260vh;
   font-family: 'Noto Sans JP', sans-serif;
   .activity__title-2 {
     padding: 7vh 0 5vh;
@@ -199,14 +218,8 @@ header {
     font-size: 4vw;
     line-height: 1.9;
   }
-  .triangle2 {
-    position: absolute;
-    top: 20vh;
-    right: -10vw;
-    width: 65vw;
-    z-index: -1;
-  }
   .activity__article {
+    display: none;
     margin-top: 5vh;
     border: 1px solid #999;
     border-radius: 20px;
@@ -217,7 +230,7 @@ header {
     span {
       display: block;
       color: #777;
-      margin: 1vh 0;
+      margin: 1.5vh 0 1vh;
       padding: 0 4vw;
     }
     .activity__article-title {
@@ -231,6 +244,43 @@ header {
       margin-bottom: 2vh;
     }
   }
+  .more {
+    width: 45vw;
+    margin: 5vh auto 10vh;
+    .more__btn {
+      width: 100%;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid #F6920D;
+      padding: 2vh 0 2.5vh;
+      border-radius: 20px;
+      .more__text {
+        color: #F6920D;
+        font-size: 7vw;
+        &::after {
+          content: "";
+          display: inline-block;
+          margin-left: 5vw;
+          margin-bottom: 0.5vh;
+          width: 4vw;
+          height: 2vh;
+          border: 3px solid;
+          border-color:  transparent transparent #F6920D #F6920D;
+          border-radius: 5px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+.triangle2 {
+  position: absolute;
+  top: 17vh;
+  right: -10vw;
+  width: 65vw;
+  z-index: -1;
 }
 
 .member {
@@ -249,10 +299,15 @@ header {
 }
 
 .contact {
+  height: 100vh;
+  font-family: 'Noto Sans JP', sans-serif;
   .contact__text {
     padding: 7vh 0 5vh;
     font-size: 4vw;
     line-height: 1.9;
+  }
+  .triangle2 {
+
   }
 }
 
