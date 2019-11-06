@@ -188,6 +188,12 @@ header {
 
 .works {
   height: 170vh;
+  font-family: 'Noto Sans JP', sans-serif;
+  .works__text {
+    padding-top: 7vh;
+    font-size: 4vw;
+    line-height: 1.9;
+  }
   .works__contents-block {
     margin: 3vh 0 15vh;
     display: flex;
@@ -284,12 +290,17 @@ header {
 }
 
 .member {
-  height: 180vh;
+  height: 190vh;
+  font-family: 'Noto Sans JP', sans-serif;
+  .mamber__text {
+    padding-top: 7vh;
+    font-size: 4vw;
+    line-height: 1.9;
+  }
   .member__img-block {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 5vh;
     .member__img {
       width: 40vw;
       border-radius: 20%;
@@ -299,20 +310,49 @@ header {
 }
 
 .contact {
-  height: 100vh;
+  height: 120vh;
   font-family: 'Noto Sans JP', sans-serif;
   .contact__text {
     padding: 7vh 0 5vh;
     font-size: 4vw;
     line-height: 1.9;
   }
-  .triangle2 {
-
+  .contact__btn {
+    width: 86vw;
+  }
+  .contact__mail {
+    font-size: 5vw;
+    display: block;
+    text-align: center;
+    margin-bottom: 5vh;
+    text-decoration: none;
+    color: #F6920D;
+    border: 2px solid #F6920D;
+    border-radius: 20px;
+    padding: 5vw 5vw 7vw;
+    &::after {
+      content: "";
+      display: inline-block;
+      margin-left: 1vw;
+      margin-top: 1vh;
+      margin-bottom: -0.4vh;
+      width: 3vw;
+      height: 1.5vh;
+      border: 3px solid;
+      border-color:  transparent transparent #F6920D #F6920D;
+      border-radius: 5px;
+      transform: rotate(-135deg);
+    }
+  }
+  .twitter-block {
+    text-align: center;
   }
 }
 
 footer {
   background: #ddd;
   width: 100vw;
-
+  img {
+    width: 100vw;
+  }
 }
