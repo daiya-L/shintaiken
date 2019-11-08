@@ -117,8 +117,7 @@ header {
   position: fixed;
   z-index: 11;
   opacity: 0;
-  transform: translateX(-70vw);
-  -webkit-transform: translateX(-70vw);
+  left: -90vw;
   transition: .7s ease;
   .gnav__list {
     li {
@@ -137,8 +136,8 @@ header {
 .gnav_open {
   opacity: 1;
   display: block;
-  transform: translateX(0vw);
-  -webkit-transform: translateX(0vw);
+  transform: translateX(90vw);
+  -webkit-transform: translateX(90vw);
   transition: .7s ease;
 }
 
@@ -270,6 +269,7 @@ header {
     img {
       width: 86vw;
       border-radius: 20px 20px 0 0;
+      object-fit: cover;
     }
     span {
       display: block;
