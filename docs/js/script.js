@@ -1,78 +1,84 @@
 new WOW().init();
-
+/*
 $(function(){
   $('a[href^="#"]').click(function(){
+    var hsize = window.innerHeight;
     var speed = 1000;
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
+    var position = hsize;
+    $("html, body").animate({scrollTop: position}, speed, "swing");
     return false;
   });
-});
+});*/
 
-/*$(function(){
+$(function(){
     $('.main-content-wrapper').stickyStack({
         containerElement: '.main-content-wrapper',
         stackingElement: 'section',
         boxShadow: '0 -3px 20px rgba(0, 0, 0, 0.25)'
     });
-});*/
-
-/*$(function(){
-  $('#about__link').click(function(){
-    var speed = 1000;
-    var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = 680;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
-    return false;
-  });
 });
 
 $(function(){
-  $('#works__link').click(function(){
+  $('#about__link').click(function(){
+    var hsize = window.innerHeight;
     var speed = 1000;
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = 1580;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
+    var position = hsize;
+    $("html, body").animate({scrollTop:position + 10}, speed, "swing");
+    return false;
+  });
+})
+
+$(function(){
+  $('#works__link').click(function(){
+    var hsize = window.innerHeight;
+    var speed = 1000;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = hsize + $('#about').outerHeight(true);
+    $("html, body").animate({scrollTop:position + 10}, speed, "swing");
     return false;
   });
 });
 
 $(function(){
   $('#activity__link').click(function(){
+    var hsize = window.innerHeight;
     var speed = 1000;
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = 2830;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
+    var position = hsize + $('#about').outerHeight(true) + $('#works').outerHeight(true);
+    $("html, body").animate({scrollTop:position + 10}, speed, "swing");
     return false;
   });
 });
 
 $(function(){
   $('#member__link').click(function(){
+    var hsize = window.innerHeight;
     var speed = 1000;
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
+    var position = hsize + $('#about').outerHeight(true) + $('#works').outerHeight(true) + $('#activity').outerHeight(true);
+    $("html, body").animate({scrollTop:position + 10}, speed, "swing");
     return false;
   });
 });
 
 $(function(){
   $('#contact__link').click(function(){
+    var hsize = window.innerHeight;
     var speed = 1000;
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
+    var position = hsize + $('#about').outerHeight(true) + $('#works').outerHeight(true) + $('#activity').outerHeight(true) + $('#member').outerHeight(true);
+    $("html, body").animate({scrollTop:position + 10}, speed, "swing");
     return false;
   });
-});*/
+});
 
 $(function() {
   $(".nav-toggle").click(function() {
