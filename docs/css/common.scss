@@ -87,11 +87,11 @@ header {
 .main-visual__bg {
   position: fixed;
   //position: absolute;
-  top: -60vw;
+  top: -50%;
   left: -62vw;
   transition: .7s ease;
-  width: 165vw;
-  height: 145vw;
+  width: 180%;
+  height: 100%;
   border-radius: 50%;
   background: #F6920D 0% 0% no-repeat padding-box;
   z-index: -5;
@@ -101,9 +101,9 @@ header {
   font-family: 'Noto Serif JP', serif;
   position: fixed;
   //position: absolute;
-  margin: 30vw 0 0 5vw;
+  margin: 35% 0 0 5vw;
   text-align: left;
-  font-size: 8vw;
+  font-size: 2.0rem;
   line-height: 2;
   letter-spacing: 0;
   color: #fff;
@@ -151,7 +151,7 @@ header {
     position: fixed;
     //position: absolute;
     height: 80vw;
-    margin-top: 90vw;
+    top: 50%;
     left: 50%;
     transform : translateX(-50%);
     z-index: -5;
@@ -160,7 +160,7 @@ header {
     width: 100vw;
     position: fixed;
     //position: absolute;
-    margin-top: 160vw;
+    top: 90%;
     z-index: -5;
   }
 }
