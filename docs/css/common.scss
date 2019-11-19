@@ -87,7 +87,7 @@ header {
 .main-visual__bg {
   position: fixed;
   //position: absolute;
-  top: -55vw;
+  top: -60vw;
   left: -62vw;
   transition: .7s ease;
   width: 165vw;
@@ -151,7 +151,7 @@ header {
     position: fixed;
     //position: absolute;
     height: 80vw;
-    bottom: 13vw;
+    margin-top: 90vw;
     left: 50%;
     transform : translateX(-50%);
     z-index: -5;
@@ -160,7 +160,7 @@ header {
     width: 100vw;
     position: fixed;
     //position: absolute;
-    bottom: 10vw;
+    margin-top: 160vw;
     z-index: -5;
   }
 }
