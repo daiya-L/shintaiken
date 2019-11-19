@@ -43,7 +43,7 @@ header {
   display: block;
   position: fixed;
   right: 3.5vw;
-  top: 2.6vh;
+  top: 5.6vw;
   margin: auto auto;
   width: 12vw;
   cursor: pointer;
@@ -87,11 +87,11 @@ header {
 .main-visual__bg {
   position: fixed;
   //position: absolute;
-  top: -35vh;
+  top: -55vw;
   left: -62vw;
   transition: .7s ease;
   width: 165vw;
-  height: 80vh;
+  height: 145vw;
   border-radius: 50%;
   background: #F6920D 0% 0% no-repeat padding-box;
   z-index: -5;
@@ -101,7 +101,7 @@ header {
   font-family: 'Noto Serif JP', serif;
   position: fixed;
   //position: absolute;
-  margin: 15vh 0 0 5vw;
+  margin: 30vw 0 0 5vw;
   text-align: left;
   font-size: 8vw;
   line-height: 2;
@@ -120,8 +120,13 @@ header {
   left: -90vw;
   transition: .7s ease;
   .gnav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90vh;
+    margin-top: 10vw;
     li {
-      margin: 9vh 20vw;
+      margin-left: 20vw;
       a {
         text-align: center;
         text-decoration: none;
@@ -146,7 +151,7 @@ header {
     position: fixed;
     //position: absolute;
     height: 80vw;
-    bottom: 10vh;
+    bottom: 13vw;
     left: 50%;
     transform : translateX(-50%);
     z-index: -5;
@@ -155,7 +160,7 @@ header {
     width: 100vw;
     position: fixed;
     //position: absolute;
-    bottom: 7vh;
+    bottom: 10vw;
     z-index: -5;
   }
 }
@@ -176,7 +181,7 @@ header {
 
 .about__title, .activity__title, .contact__title {
   font-family: 'Oswald', sans-serif;
-  padding-top: 12vh;
+  padding-top: 20vw;
   font-size: 26vw;
   letter-spacing: -3px;
   color: #F6920D;
@@ -185,7 +190,7 @@ header {
 .works__title, .member__title, {
   font-family: 'Oswald', sans-serif;
   font-size: 26vw;
-  padding-top: 12vh;
+  padding-top: 20vw;
   letter-spacing: -3px;
   color: #000;
 }
@@ -193,7 +198,7 @@ header {
 .about {
   //height: 280vw;
   .about__title-2 {
-    padding: 10vh 0 7vh;
+    padding: 18vw 0 12vw;
     font-size: 6vw;
     line-height: 1.5;
     font-family: 'Noto Sans JP', sans-serif;
