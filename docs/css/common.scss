@@ -87,7 +87,7 @@ header {
 .main-visual__bg {
   position: fixed;
   //position: absolute;
-  top: -80vw;
+  top: -90vw;
   left: -62vw;
   transition: .7s ease;
   width: 180%;
@@ -101,7 +101,7 @@ header {
   font-family: 'Noto Serif JP', serif;
   position: fixed;
   //position: absolute;
-  margin: 35% 0 0 5vw;
+  margin: 24vw 0 0 5vw;
   text-align: left;
   font-size: 2.0rem;
   line-height: 2;
@@ -151,7 +151,7 @@ header {
     position: fixed;
     //position: absolute;
     height: 70vw;
-    top: 90vw;
+    top: 80vw;
     left: 50%;
     transform : translateX(-50%);
     z-index: -5;
@@ -160,7 +160,7 @@ header {
     width: 100vw;
     position: fixed;
     //position: absolute;
-    top: 150vw;
+    top: 140vw;
     z-index: -5;
   }
 }
