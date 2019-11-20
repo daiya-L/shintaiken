@@ -87,11 +87,11 @@ header {
 .main-visual__bg {
   position: fixed;
   //position: absolute;
-  top: -50%;
+  top: -80vw;
   left: -62vw;
   transition: .7s ease;
   width: 180%;
-  height: 100%;
+  height: 170vw;
   border-radius: 50%;
   background: #F6920D 0% 0% no-repeat padding-box;
   z-index: -5;
@@ -151,7 +151,7 @@ header {
     position: fixed;
     //position: absolute;
     height: 70vw;
-    top: 50%;
+    top: 90vw;
     left: 50%;
     transform : translateX(-50%);
     z-index: -5;
@@ -160,7 +160,7 @@ header {
     width: 100vw;
     position: fixed;
     //position: absolute;
-    bottom: 8%;
+    top: 150vw;
     z-index: -5;
   }
 }
