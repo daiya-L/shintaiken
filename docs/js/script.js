@@ -20,6 +20,18 @@ $(function(){
     });
 });*/
 
+if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+//ここに書いた処理はスマホ閲覧時は無効となる
+  $(function(){
+    $(window).scroll(function(){
+      if ($(window).scrollTop()+40 > $('#works').offset().top &&　$(window).scrollTop()+40 < $('#activity').offset().top ||  $(window).scrollTop()+40 > $('#member').offset().top &&　$(window).scrollTop()+40 < $('#contact').offset().top){
+        $(".gnav .gnav__list li a").css("color", "#000");
+      }else
+        $(".gnav .gnav__list li a").css("color", "#F6920D");
+    });
+  });
+}
+
 $(function(){
   $('#about__link').click(function(){
     var hsize = window.innerHeight;
@@ -98,7 +110,7 @@ $(function() {
 
 
 const defaultDispCnt = 3; // 初期表示件数
-const addDispCnt = 2;     // 追加表示件数
+const addDispCnt = 3;     // 追加表示件数
 
 (function ($) {
   $(function () {
