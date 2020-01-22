@@ -61,8 +61,8 @@ header {
   top: 0;
   right: 100%;
   width: 100%;
-  height: 30px;
-  border-radius: 30px;
+  height: 20px;
+  border-radius: 20px;
   background: $main-color;
   pointer-events: none;
 }
@@ -93,14 +93,14 @@ header {
     z-index: 1000;
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     img {
-      position: absolute;
+      position: fixed;
       overflow: hidden;
       top: 0;
       left: 0;
       display: block;
-      z-index: 1000;
+      z-index: 2000;
       width: 100vw;
       height: 100vh;
     }
@@ -120,6 +120,7 @@ header {
   top: -20px;
   z-index: 10;
   transition: .7s ease;
+  opacity: 1;
 }
 
 .nav_bg-open {
@@ -343,9 +344,6 @@ header {
       border-radius: 50%;
       position: relative;
       box-shadow: 4px 4px 6px #00000029;
-      &:last-child {
-        display: none;
-      }
       .works__img {
         width: 100%;
         height: 100%;
@@ -358,9 +356,6 @@ header {
       }
       .works__caption {
         display: none;
-      }
-      &:last-child {
-        margin-bottom: 24vw;
       }
     }
     .noimage {

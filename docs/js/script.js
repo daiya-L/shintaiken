@@ -215,7 +215,7 @@ $(window).on('load resize', function(){
     }(jQuery));
   } else {
     const defaultDispCnt = 3; // 初期表示件数
-    const addDispCnt = 5;     // 追加表示件数
+    const addDispCnt = 6;     // 追加表示件数
 
     (function ($) {
       $(function () {
